@@ -1,0 +1,12 @@
+txt='but soft what light in youndar window breaks'
+words=txt.split()
+t=list()
+for word in words:
+    t.append((len(word),word))
+print('Before Sort:',t)
+t.sort(reverse=True)
+print('After Sort:',t)
+res=list()
+for length, word in t:
+    res.append(word)
+print('Longest to shortest word list in txt:',res)
